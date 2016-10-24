@@ -38,7 +38,7 @@ var findGeolocation = function(){
 				lat: position.coords.latitude,
 				lng: position.coords.longitude
 			};
-			var url = 'http://maps.googleapis.com/maps/api/geocode/json?latlng='+pos.lat+','+pos.lng+'&sensor=true';
+			var url = 'https://maps.googleapis.com/maps/api/geocode/json?latlng='+pos.lat+','+pos.lng+'&sensor=true';
 			$.get(url).done(function(data){
 				var address = data.results[0].formatted_address;
 				
